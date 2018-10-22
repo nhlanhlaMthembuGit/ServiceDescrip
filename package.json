@@ -1,0 +1,132 @@
+{
+  "abort_stat_code": [
+    {
+      "code": 12316,
+      "description": "The session was aborted because of the application session timeout expired. (Pull)"
+    },
+    {
+      "code": 12504,
+      "description": "String The error is returned by the network when it receives a parameter with an unexpected value, without type violation. This error is returned by the responder if it is not able to deal with the contents of the USSD string. (Push) (Pull) unexpectedDataValue"
+    },
+    {
+      "code": 12511,
+      "description": "The transaction ID specified is not valid. (Push) (Pull)"
+    },
+    {
+      "code": 12514,
+      "description": "No push agent has been configured for the application. (Push)"
+    },
+    {
+      "code": 12515,
+      "description": "Push functionality is not supported on this implementation. (Push)"
+    },
+    {
+      "code": 12516,
+      "description": "Push initialisation failed (Push)"
+    },
+    {
+      "code": 12520,
+      "description": "Menu redirection failed (Pull)"
+    },
+    {
+      "code": 1252,
+      "description": "MAP Abort (Pull)"
+    },
+    {
+      "code": 12528,
+      "description": "The session was aborted because of an application timeout. (Pull)v"
+    },
+    {
+      "code": 12529,
+      "description": "The session was aborted because of a NIM timeout. (Push) (Pull)"
+    },
+    {
+      "code": 12530,
+      "description": "The session was aborted because of an application timeout after session resumption. (Pull)"
+    },
+    {
+      "code": 12531,
+      "description": "The session was aborted because of a NIM timeout after session resumption. (Pull)"
+    },
+    {
+      "code": 12550,
+      "description": "The error is returned for an unknown subscriber. (Push)String   unknownSub"
+    },
+    {
+      "code": 125513,
+      "description": "This error is returned if the subscriber is barred. (Push) String  callBarred"
+    },
+    {
+      "code": 12552,
+      "description": "The error is returned when the subscriber is absent. (Push) String  absentSub"
+    },
+    {
+      "code": 12553,
+      "description": "The error is returned for network element system failure. (Push) String  systemFailure"
+    },
+    {
+      "code": 12554,
+      "description": "The errorString  dataMissing is returned for USSD push data missing. (Push)"
+    },
+    {
+      "code": 12555,
+      "description": "This error is returned by the MS or the network when the alphabet/language used for the USSD operation is not known by the network or the MS. (Push)    String  unknownAlphabet"
+    },
+    {
+      "code": 12556,
+      "description": "This error is returned if the MS is already on a USSD session. (Push)String  ussdBusy (Push)"
+    },
+    {
+      "code": 12557,
+      "description": "This error is returned network aborts. (Push)  String  networkError"
+    },
+    {
+      "code": 12558,
+      "description": "This error is returned when user aborts. (Push)   String  userAbort"
+    },
+    {
+      "code": 12502,
+      "description": "One or more arguments specified are invalid."
+    },
+    {
+      "code": 12504,
+      "description": "The data received does not conform to what is expected."
+    },
+    {
+      "code": 12505,
+      "description": "Timeout"
+    },
+    {
+      "code": 12506,
+      "description": "Invalid run node"
+    },
+    {
+      "code": 232323,
+      "description": "Desccbvbvbvbv"
+    },
+    {
+      "code": 12507,
+      "description": "The named connection specified is not running or not configured."
+    },
+    {
+      "code": 12508,
+      "description": "The named connection failed to be registered."
+    },
+    {
+      "code": 12509,
+      "description": "Log in to the USSD Access Point failed."
+    }
+  ],
+  "name": "service_descrp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jsonfile": "^5.0.0"
+  }
+}
