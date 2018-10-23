@@ -3,25 +3,44 @@ var jsonFile = require('jsonfile')
 
 var fileName = 'service.json'
 
-//ABORT ERROR STATUS CODES
-jsonFile.readFile(fileName, function(err, jsonData) {
+
+
+
+function getErrorServiceCodes(errorCode)
+{
+
+
+    //get Error codes
+
+    
+
+    jsonFile.readFile(fileName, function(err, jsonData) {
+
+
+        
+
+        for(let i = 0; i < jsonData.length; i++)
+        {
+
+            if(jsonData[i].sessionErrorCode==errorCode)
+            {
+                
+
+               console.log(jsonData[i].description);
+               break;
+
+
+            }
+
+        }
+
+        
+      
   
-  console.log(jsonData);
-  for (var i = 0; i < jsonData.length; ++i) {
+    });
     
-    console.log("error type: "+jsonData[i].sessionErrorCode);
-  }
-});
+  
+}
 
- //UXML ERROR STATUS CODES
- var theFileName = 'uxmlerror.json'
+getErrorServiceCodes(12557);
 
- jsonFile.readFile(theFileName, function(err, jsonData) {
-  console.log(jsonData);
-  for (var i = 0; i < jsonData.length; ++i) {
-    
-    console.log("error type: "+jsonData[i].uxmlErrorCode);
-    
-    
-  }
-});
